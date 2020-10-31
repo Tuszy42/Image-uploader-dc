@@ -1,0 +1,230 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  background: #fafafb;
+}
+.message {
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 5px 0;
+  border: black 1px solid;
+  border-radius: 4px;
+}
+.message.message--error {
+  background-color: #dfa9a9;
+  border-color: #891010;
+  color: #891010;
+}
+.message.message--warning {
+  background-color: #f0d398;
+  border-color: #a05408;
+  color: #a05408;
+}
+
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 32px;
+  width: 370px;
+  height: 437px;
+  background: #fafafb;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.card.card--small {
+  height: 111px;
+}
+
+.card__header {
+  font-size: 18px;
+  line-height: 27px;
+}
+.card__subheader {
+  font-size: 10px;
+  line-height: 15px;
+}
+.card__subheader2 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.button {
+  width: 101px;
+  height: 31.98px;
+  border-radius: 8px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  line-height: 31px;
+  cursor: pointer;
+}
+
+.button.button--blue {
+  background: #2f80ed;
+  border: none;
+}
+
+#drop_zone {
+  padding: 35px;
+  width: 338px;
+  height: 218.9px;
+  background: #f6f8fb;
+  border: 2px dashed #97bef4;
+  box-sizing: border-box;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#drop_zone.highlight {
+  background-color: #fbf6f6;
+  border-color: red;
+}
+
+.text--white {
+  color: #ffffff !important;
+}
+.text--gray2 {
+  color: #4f4f4f !important;
+}
+.text--gray3 {
+  color: #828282 !important;
+}
+.text--gray4 {
+  color: #bdbdbd !important;
+}
+
+.d-none {
+  display: none !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+.d-flex .grow{
+  flex-grow: 1;
+}
+
+.justify-space-around {
+  justify-content: space-around !important;
+}
+.justify-space-between {
+  justify-content: space-between !important;
+}
+
+#img_upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.align-items--left {
+  align-items: start !important;
+}
+.overflow--hidden {
+  overflow: hidden !important;
+}
+
+.card__progress {
+  position: relative;
+  width: 100%;
+}
+.card__progress-line {
+  background-color: #f2f2f2;
+  display: -webkit-flex;
+  display: flex;
+}
+.card__progress-line,
+.card__progress-line:before {
+  height: 3px;
+  width: 100%;
+  margin: 0;
+}
+.card__progress-line:before {
+  background-color: #2f80ed;
+  content: "";
+  width: 50px;
+  position: absolute;
+  -webkit-animation: running-progress 2s linear infinite;
+  animation: running-progress 2s linear infinite;
+}
+@-webkit-keyframes running-progress {
+  0% {
+    margin-left: -50px;
+    margin-right: 100%;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: -50px;
+  }
+}
+@keyframes running-progress {
+  0% {
+    margin-left: -50px;
+    margin-right: 100%;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: -50px;
+  }
+}
+
+#image-container {
+  background-color: #dfdfdf;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 338px;
+  height: 224.4px;
+  border-radius: 12px;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.green600 { color: #219653; }
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+#link {
+  padding: 2px;
+  background-color: #F6F8FB;
+  height: 34px;
+  width: 338px;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#link #link__content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 8px;
+  line-height: 31px;  
+  text-align: center;
+  width: 260px;
+}
+#link #link__copy {
+  line-height: initial;
+  height: 28px;
+  width: 80px;
+}
+
+#restart{
+  text-decoration: underline;
+  cursor: pointer;
+}

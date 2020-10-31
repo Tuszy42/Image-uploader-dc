@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image uploader</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- <step1>select image file</step1> -->
+    <div class="card d-flex justify-space-between step" id="step_1">
+        <p class="card__header text--gray2">Upload your image</p>
+        <div id="messages">
+        </div>
+        <div id="drop_zone" class="d-flex">
+            <img src="assets/image.svg" alt="">
+            <p class="card__subheader2 text--gray4">Drag & Drop your image here</p>
+        </div>
+        <p class="card__subheader2 text--gray4">Or</p>
+        <input type="file" name="img_upload" id="img_upload" accept="image/*" onchange="handleImgFile(this)" />
+        <label for="img_upload" class="button button--blue text--white">Choose a file</label>
+    </div>
+    <!-- <step2>upload image file</step2> -->
+    <div class="card card--small d-none justify-space-around align-items--left step" id="step_2">
+        <p>Uploading...</p>
+        <div class="card__progress overflow--hidden">
+            <div class="card__progress-line"></div>
+        </div>
+    </div>
+    <!-- <step3>display uploaded image</step3> -->
+    <div class="card d-flex step" id="step_3">
+        <i class="material-icons md-48 green600 ">check_circle</i>
+        <p class="card__header text--gray2">Uploaded successfullly</p>
+        <div id="image-container" class="d-flex">
+        </div>
+        <div id="link" class="d-flex">
+            <div id="link__content" class="grow text--gray2"></div>
+            <button id="link__copy" class="button button--blue text--white">Copy link</button>
+        </div>
+        <a id="restart" class="text--gray2 card__subheader2">Upload another image</a>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+    <script src="conf.js"></script>
+    <script src="firebase.conf.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
