@@ -4,6 +4,7 @@ function initFirebase(){
         return;
     }
     firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
 }
 
 initFirebase();

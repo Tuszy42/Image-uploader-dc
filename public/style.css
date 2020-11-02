@@ -109,7 +109,7 @@ body {
   display: flex !important;
 }
 
-.d-flex .grow{
+.d-flex .grow {
   flex-grow: 1;
 }
 
@@ -190,22 +190,34 @@ body {
   border-radius: 12px;
 }
 
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.green600 { color: #219653; }
+.material-icons.md-48 {
+  font-size: 48px;
+}
+.material-icons.green600 {
+  color: #219653;
+}
 /* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
 
 /* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 #link {
   padding: 2px;
-  background-color: #F6F8FB;
+  background-color: #f6f8fb;
   height: 34px;
   width: 338px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -214,7 +226,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 8px;
-  line-height: 31px;  
+  line-height: 31px;
   text-align: center;
   width: 260px;
 }
@@ -224,7 +236,25 @@ body {
   width: 80px;
 }
 
-#restart{
+#restart {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #d5d5d5;
+  color: #7b7b7b;
+  width: 100%;
+  padding: 5px;
+  font-size: 11px;
+  letter-spacing: -0.6px;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer img {
+  width: 18px;
+  margin: 0 5px
 }
